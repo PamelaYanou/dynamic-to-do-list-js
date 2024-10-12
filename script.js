@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     let taskItem = document.createElement("li");
     taskItem.textContent = taskText;
+     taskItem.classList.add("task-item");
     let removeButton = document.createElement("button");
     removeButton.textContent = "Remove";
-    removeButton.className = "remove-btn";
+    removeButton.classList.add("remove-btn");
 
     removeButton.onclick = function () {
       taskList.removeChild(taskItem);
